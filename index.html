@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send an email | PHPMAILER </title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <script src="public/js/jquery-1.11.3.min.js"></script>
+    <script src="public/js/bootstrap.js"></script>
+    <script src="public/js/functions.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div><br><br></div>
+
+    <div class="col-md-4 col-md-offset-4">
+
+        <div class="panel panel-info">
+        	  <div class="panel-heading">
+        			<h3 class="panel-title"><i class="glyphicon glyphicon-envelope"></i> Send email</h3>
+        	  </div>
+        	  <div class="panel-body">
+                  <form role="form" id="fSendEmail" name="fSendEmail" onsubmit="return false;">
+                      <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="name" class="form-control" id="name">
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email address:</label>
+                          <input type="email" class="form-control" id="email">
+                      </div>
+                      <div class="form-group">
+                          <label for="subject">Subject:</label>
+                          <input type="text" class="form-control" id="subject">
+                      </div>
+
+                      <div class="form-group">
+                          <label for="message">Message:</label>
+                          <textarea  class="form-control" id="message"></textarea>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="message">Mode:</label>
+                          <select name="mode" id="mode" class="form-control">
+                          	<option value="">--Select mode--</option>
+                          	<option value="0">Production</option>
+                          	<option value="1">Client messages</option>
+                          	<option value="2">Client and server messages</option>
+                          </select>
+                      </div>
+                      <button class="btn btn-info btn btn-block sendEmail"><i class="glyphicon glyphicon-send"></i> Send email</button>
+                  </form>
+        	  </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <code id="divExit"></code>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
