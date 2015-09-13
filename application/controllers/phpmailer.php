@@ -21,21 +21,21 @@ $mail->IsSMTP();
 // 0 = off (Production)
 // 1 = client messages
 // 2 = client and server messages
-$mail->SMTPDebug  = $mode;
+$mail->SMTPDebug  = 2;
 //HOST SERVER
-$mail->Host       ='';
+$mail->Host       ='smtp.gmail.com';
 //587 or 465
-$mail->Port       =  '';
+$mail->Port       =  '587';
 //TLS or SSL
-$mail->SMTPSecure =  '';
+$mail->SMTPSecure =  'tls';
 //IF GMAIL SET TRUE
-$mail->SMTPAuth   =  '';
+$mail->SMTPAuth   =  'true';
 //EMAIL ADDRESS
 $mail->Username   =  '';
 //EMAIL PASSWORD
 $mail->Password   =  '';
 //FROM EMAIL AND FROM NAME
-$mail->SetFrom('', '');
+$mail->SetFrom('email@gmail.com', 'Oliver');
 
 //IF YOUR NEED TO SEND A COPY USE THE NEXT LINE
 //$mail->AddReplyTo('replyto@example.com','name reply');
